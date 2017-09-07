@@ -91,12 +91,12 @@
 //        $('p').click(function(){
 //            $(this).hide();
 //        });
-        var x=10;
-        var y=10;
-        var z=10;
+        var x=0;
+        var y=0;
+        var z=0;
         
         $('.tank.one').mousedown(function(){
-            x+=10;
+            if(x<=250)x+=5;
         });
        
         $(".tank.one").mouseup(function(){
@@ -107,7 +107,7 @@
         
         
         $('.tank.two').mousedown(function(){
-            y+=10;
+            if(y<=250)y+=5;
         });
        
         $(".tank.two").mouseup(function(){
@@ -117,7 +117,7 @@
         });
         
         $('.tank.three').mousedown(function(){
-            z+=10;
+           if(z<=250)z+=5;
         });
        
         $(".tank.three").mouseup(function(){
